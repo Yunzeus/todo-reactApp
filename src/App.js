@@ -14,7 +14,8 @@ function App() {
 
   const renderToDoItem = ({item}) => {
    return <ToDoItem todoItem={item} editToDo={editToDo} removeToDo={removeToDo} />
-  };
+  }; 
+  
 
   const addToDo = () => {
     if(newToDoText!==''){
