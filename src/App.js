@@ -6,16 +6,9 @@ import {
 import { ToDoItem,NewItem } from './components';
 
 
-function App() {
-
-  const [newToDoText, setNewToDoText] = useState('');
-  const [todos, setTodos] = useState([]);
-
-
   const renderToDoItem = ({item}) => {
    return <ToDoItem todoItem={item} editToDo={editToDo} removeToDo={removeToDo} />
   }; 
-  
 
   const addToDo = () => {
     if(newToDoText!==''){
